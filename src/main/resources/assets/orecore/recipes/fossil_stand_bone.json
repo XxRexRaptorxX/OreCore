@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "fossil_stands",
+  "ingredients": [
+  
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "orecore:fossil_stand_base"
+    }
+  ],
+  
+  "result": {
+    "item": "orecore:fossil_stand_bone"
+  }
+}

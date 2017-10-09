@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "#",
+    "X",
+    "X"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "orecore:lava_crystal"
+    },
+    
+    "X": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  
+  
+  "result": {
+    "item": "orecore:lavacrystal_shovel"
+  }
+}

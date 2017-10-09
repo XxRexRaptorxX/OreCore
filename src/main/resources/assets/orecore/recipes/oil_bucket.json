@@ -1,0 +1,25 @@
+{
+  "type": "orecore:custom_recipe",
+  "ingredients": [
+  
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "orecore:oil_paste"
+    },
+        {
+      "item": "orecore:oil_paste"
+    },
+        {
+      "item": "orecore:oil_paste"
+    },
+        {
+      "item": "orecore:oil_paste"
+    }
+  ],
+  
+  "result": {
+    "item": "orecore:oil_bucket"
+  }
+}

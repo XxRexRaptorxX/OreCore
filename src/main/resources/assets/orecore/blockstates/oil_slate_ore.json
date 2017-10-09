@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:oil_slate_ore" }
+  }
+}

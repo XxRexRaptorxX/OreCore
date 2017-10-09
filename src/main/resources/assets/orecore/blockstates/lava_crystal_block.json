@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:lava_crystal_block" }
+  }
+}

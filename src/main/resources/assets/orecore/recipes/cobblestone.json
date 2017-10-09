@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "###",
+    "###",
+    "###"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "orecore:stone"
+    }
+  },
+  
+  
+  "result": {
+    "item": "minecraft:cobblestone",
+    "data": 0
+  }
+}
