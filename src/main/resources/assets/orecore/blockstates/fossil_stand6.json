@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "orecore:fossil_stand6", "y": 0},
-        "facing=south": { "model": "orecore:fossil_stand6", "y": 180},
-        "facing=east": {  "model": "orecore:fossil_stand6", "y": 90},
-        "facing=west": {  "model": "orecore:fossil_stand6", "y": 270}
-    }
-}
