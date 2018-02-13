@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:compressed_sapphire_ore" }
+  }
+}

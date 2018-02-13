@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "X X"
+    
+  ],
+  "key": {
+    "X": {
+      "item": "orecore:fossil5"
+      }
+  },
+  
+  
+  "result": {
+    "item": "orecore:bone_boots"
+  }
+}

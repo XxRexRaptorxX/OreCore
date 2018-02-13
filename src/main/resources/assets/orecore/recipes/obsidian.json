@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "orecore:magmarack_block"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  
+  "result": {
+    "item": "minecraft:obsidian"
+  }
+}

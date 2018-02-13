@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:copper_ore" }
+  }
+}

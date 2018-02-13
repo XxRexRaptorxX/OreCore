@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:meteor_block" }
+  }
+}

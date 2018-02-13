@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:gold_gravel_ore" }
+  }
+}

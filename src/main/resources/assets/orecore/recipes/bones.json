@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "#"
+  ],
+  
+  "key": {
+    "#": [
+      {
+        "item": "orecore:fossil"
+      },
+      {
+        "item": "orecore:fossil1"
+      },
+      {
+        "item": "orecore:fossil2"
+      },
+      {
+        "item": "orecore:fossil3"
+      },
+            {
+        "item": "orecore:fossil4"
+      },
+      {
+        "item": "orecore:fossil5"
+      },
+      {
+        "item": "orecore:fossil6"
+      }
+    ]
+  },
+  
+  "result": {
+    "item": "minecraft:bone",
+    "count": 3
+  }
+}

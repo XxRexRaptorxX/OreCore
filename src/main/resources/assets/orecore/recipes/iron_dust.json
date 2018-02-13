@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "orecore:tiny_iron_dust"
+    },
+    {
+      "item": "orecore:tiny_iron_dust"
+    },
+    {
+      "item": "orecore:tiny_iron_dust"
+    },
+    {
+      "item": "orecore:tiny_iron_dust"
+    }
+  ],
+  
+  "result": {
+    "item": "orecore:iron_dust"
+  }
+}

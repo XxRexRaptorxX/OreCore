@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "XXX",
+    "OOO",
+    "XXX"
+    
+  ],
+  "key": {
+    "X": {
+      "item": "orecore:slate_block"
+    },
+    
+    "O": {
+      "item": "orecore:basalt_block"
+    }
+  },
+  
+  
+  "result": {
+    "item": "orecore:fossil_stand_base"
+  }
+}

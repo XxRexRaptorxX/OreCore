@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:quartz_ore" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "#",
+    "X",
+    "#"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bone"
+    },
+    "X": {
+      "item": "orecore:fossil1"
+      }
+  },
+  
+  
+  "result": {
+    "item": "orecore:bone_chestplate"
+  }
+}

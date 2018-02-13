@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "orecore:magmarack_block" }
+  }
+}

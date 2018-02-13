@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "##",
+    "##"
+    
+  ],
+  "key": {
+    "#": {
+      "item": "orecore:ashe"
+    }
+  },
+  
+  
+  "result": {
+    "item": "orecore:ashe_block"
+  }
+}
