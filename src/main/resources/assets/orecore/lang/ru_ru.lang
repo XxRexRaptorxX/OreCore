@@ -1,0 +1,225 @@
+//translated by Foxgreat
+
+itemGroup.oreTab=Ore Core
+
+tile.mixed_ore.name=Смешенная Руда
+
+tile.compressed_coal_ore.name=Плотная Угольная Руда
+tile.compressed_iron_ore.name=Плотная Железая Руда
+tile.compressed_gold_ore.name=Плотная Золотая Руда
+tile.compressed_lapis_ore.name=Плотная Лазуритовая Руда
+tile.compressed_redstone_ore.name=Плотная руда Красной пыли 
+tile.compressed_emerald_ore.name=Плотная Изумрудная Руда
+tile.compressed_diamond_ore.name=Плотная Алмазная Руда
+
+tile.compressed_aluminium_ore.name=Плотная Алюминиевая Руда
+tile.compressed_amethyst_ore.name=Плотная Аметистовая Руда
+tile.compressed_copper_ore.name=Плотная Медная Руда
+tile.compressed_iridium_ore.name=Плотная Иридиумная Руда
+tile.compressed_lead_ore.name=Плотная Свинцовая Руда
+tile.compressed_platinum_ore.name=Плотная Платиновая Руда
+tile.compressed_quartz_ore.name=Плотная Кварцевая Руда
+tile.compressed_ruby_ore.name=Плотная Рубиновая Руда
+tile.compressed_sapphire_ore.name=Плотная Сапфировая Руда
+tile.compressed_silver_ore.name=Плотная Серебрянная Руда
+tile.compressed_tin_ore.name=Плотная Оловянная Руда
+tile.compressed_uranium_ore.name=Плотная Урановая Руда
+
+tile.nether_coal_ore.name=Адская Угольная Руда
+tile.nether_iron_ore.name=Адская Железная Руда
+tile.nether_gold_ore.name=Адская Золотая Руда
+tile.nether_lapis_ore.name=Адская Лазуритовая Руда
+tile.nether_redstone_ore.name=Адская руда Красной пыли 
+tile.nether_emerald_ore.name=Адская Изумрудная Руда
+tile.nether_diamond_ore.name=Адская Алмазная Руда
+tile.nether_glowstone_ore.name=Адская Светопыльная Руда
+
+tile.end_coal_ore.name=Угольная руда края
+tile.end_iron_ore.name=Железная руда края
+tile.end_gold_ore.name=Золотая руда края
+tile.end_lapis_ore.name=Лазуритовая руда края
+tile.end_redstone_ore.name=Руда красной пыли края
+tile.end_emerald_ore.name=Изумрудная руда края
+tile.end_diamond_ore.name=Алмазная руда края
+tile.end_glowstone_ore.name=Светопыльная руда края
+
+tile.bone_ore.name=Кости
+tile.fossil_ore.name=Ископаемое
+tile.fossil_ore1.name=Ископаемое
+tile.fossil_ore2.name=Ископаемое
+tile.fossil_ore3.name=Ископаемое
+tile.fossil_ore4.name=Ископаемое
+tile.fossil_ore5.name=Ископаемое
+tile.fossil_ore6.name=Ископаемое
+
+tile.nether_bone_ore.name=Адские Кости
+tile.nether_fossil_ore.name=Адское ископаемое
+tile.nether_fossil_ore1.name=Адское ископаемое
+tile.nether_fossil_ore2.name=Адское ископаемое
+tile.nether_fossil_ore3.name=Адское ископаемое
+tile.nether_fossil_ore4.name=Адское ископаемое
+tile.nether_fossil_ore5.name=Адское ископаемое
+tile.nether_fossil_ore6.name=Адское ископаемое
+
+tile.end_bone_ore.name=Кости края
+tile.end_fossil_ore.name=Ископаемое края
+tile.end_fossil_ore1.name=Ископаемое края
+tile.end_fossil_ore2.name=Ископаемое края
+tile.end_fossil_ore3.name=Ископаемое края
+tile.end_fossil_ore4.name=Ископаемое края
+tile.end_fossil_ore5.name=Ископаемое края
+tile.end_fossil_ore6.name=Ископаемое края
+
+tile.xp_ore.name=Руда опыта
+tile.nether_xp_ore.name=Адская руда опыта
+tile.end_xp_ore.name=Руда опыта края
+
+tile.basalt_block.name=Полированный Базальт
+tile.basalt_ore.name=Базальт
+tile.marmor_block.name=Резной мрамор
+tile.marmor_ore.name=Мрамор
+tile.slate_block.name=Резной сланец
+tile.slate_ore.name=Сланец
+tile.oil_slate_ore.name=Нефтяной сланец
+
+tile.ashe_block.name=Пепельный блок
+tile.lava_crystal_block.name=Блок из кристалла лавы
+tile.lava_crystal_ore.name=Рудный кристалл лавы
+tile.loam_block.name=Суглинистый Блок
+tile.loam_brick_block.name=Суглинистый Кирпич
+tile.meteor_block.name=Метеор
+tile.magmarack_block.name=Насыщенный лавой адский камень
+
+tile.gold_gravel_ore.name=Золотая Гравиевая Руда
+tile.iron_gravel_ore.name=Железная Гравиевая Руда
+tile.nether_eye_block.name=Адская Глазница
+tile.nether_eye_block2.name=Адская Глазница
+tile.end_eye_block.name=Глазница Края
+tile.nether_mob_block.name=Камень Адской чешуйницы
+tile.end_mob_block.name=Камень Чешуйницы края
+
+tile.nether_aluminium_ore.name=Адская Алюминиевая Руда
+tile.nether_amethyst_ore.name=Адская Аметистовая Руда
+tile.nether_copper_ore.name=Адская Медная Руда
+tile.nether_iridium_ore.name=Адская Иридиумная Руда
+tile.nether_lead_ore.name=Адская Свинцовая Руда
+tile.nether_platin_ore.name=Адская Платиновая Руда
+tile.nether_ruby_ore.name=Адская Рубиновая Руда
+tile.nether_sapphire_ore.name=Адская Сапфировая Руда
+tile.nether_silver_ore.name=Адская Серебрянная Руда
+tile.nether_tin_ore.name=Адская Оловянная Руда
+tile.nether_uranium_ore.name=Адская Урановая Руда
+
+tile.end_aluminium_ore.name=Края Алюминиевая Руда
+tile.end_amethyst_ore.name=Края Аметистовая Руда
+tile.end_copper_ore.name=Края Медная Руда
+tile.end_iridium_ore.name=Края Иридиумная Руда
+tile.end_lead_ore.name=Края Свинцовая Руда
+tile.end_platin_ore.name=Края Платиновая Руда
+tile.end_ruby_ore.name=Края Рубиновая Руда
+tile.end_sapphire_ore.name=Края Сапфировая Руда
+tile.end_silver_ore.name=Края Серебрянная Руда
+tile.end_tin_ore.name=Края Оловянная Руда
+tile.end_uranium_ore.name=Края Урановая Руда
+
+tile.aluminium_ore.name=Алюминиевая Руда
+tile.amethyst_ore.name=Аметистовая Руда
+tile.copper_ore.name=Медная Руда
+tile.iridium_ore.name=Иридиумная Руда
+tile.lead_ore.name=Свинцовая Руда
+tile.platinum_ore.name=Платиновая Руда
+tile.ruby_ore.name=Рубиновая Руда
+tile.sapphire_ore.name=Сапфировая Руда
+tile.silver_ore.name=Серебрянная Руда
+tile.tin_ore.name=Оловянная Руда
+tile.uranium_ore.name=Урановая Руда
+tile.quartz_ore.name=Кварцевая Руда
+
+tile.fossil_stand_base.name=Ископаемый стенд
+tile.fossil_stand_bone.name=Ископаемый стенд
+tile.fossil_stand0.name=Ископаемый стенд
+tile.fossil_stand1.name=Ископаемый стенд
+tile.fossil_stand2.name=Ископаемый стенд
+tile.fossil_stand3.name=Ископаемый стенд
+tile.fossil_stand4.name=Ископаемый стенд
+tile.fossil_stand5.name=Ископаемый стенд
+tile.fossil_stand6.name=Ископаемый стенд
+
+
+
+//============================================================================//
+
+
+
+
+item.fossil.name=Ископаемое
+item.fossil1.name=Ископаемое
+item.fossil2.name=Ископаемое
+item.fossil3.name=Ископаемое
+item.fossil4.name=Ископаемое
+item.fossil5.name=Ископаемое
+item.fossil6.name=Ископаемое
+
+item.oil_paste.name=Маслянная паста
+item.oil_bucket.name=Ведро масла
+
+item.ashe.name=Пепел
+item.lava_crystal.name=Кристалл лавы
+item.loam_ball.name=Шарик суглинка
+item.loam_brick.name=Кирпич суглинка
+item.meteor.name=Метеор
+item.stone.name=Камень
+
+item.coal_dust.name=Угольная пыль
+item.iron_dust.name=Железная пыль
+item.gold_dust.name=Золотая пыль
+item.lapis_dust.name=Лазуритовая пыль
+item.emerald_dust.name=Изумрудная пыль
+item.diamond_dust.name=Алмазная пыль
+
+item.tiny_coal_dust.name=Крошечная угольная пыль
+item.tiny_iron_dust.name=Крошечная Железная пыль
+item.tiny_gold_dust.name=Крошечная Золотая пыль
+item.tiny_lapis_dust.name=Крошечная Лазуритовая пыль
+item.tiny_emerald_dust.name=Крошечная Изумрудная пыль
+item.tiny_diamond_dust.name=Крошечная Алмазная пыль
+
+item.emerald_sword.name=Изумрудный Меч
+item.emerald_pickaxe.name=Изумрудная Кирка
+item.emerald_axe.name=Изумрудный Топор
+item.emerald_shovel.name=Изумрудная Лопата
+item.emerald_hoe.name=Изумрудная Мотыга
+
+item.lavacrystal_sword.name=Меч из кристалла лавы
+item.lavacrystal_pickaxe.name=Кирка из кристалла лавы
+item.lavacrystal_axe.name=Топор из кристалла лавы
+item.lavacrystal_shovel.name=Лопата из кристалла лавы
+item.lavacrystal_hoe.name=Мотыга из кристалла лавы
+
+item.bone_helmet.name=Костянной Шлем
+item.bone_chestplate.name=Костяной Нагрудник
+item.bone_leggins.name=Костянные Штаны
+item.bone_boots.name=Костянные Ботинки
+
+item.emerald_helmet.name=Изумрудный Шлем
+item.emerald_chestplate.name=Изумрудный Нагрудник
+item.emerald_leggins.name=Изумрудные Штаны
+item.emerald_boots.name=Изумрудные Ботинки
+
+item.lavacrystal_helmet.name=Шлем из кристалла лавы
+item.lavacrystal_chestplate.name=Нагрудник из кристалла лавы
+item.lavacrystal_leggins.name=Штаны из кристалла лавы
+item.lavacrystal_boots.name=Ботинки из кристалла лавы
+
+item.aluminium_ingot.name=Алюминиевый Самородок
+item.amethyst.name=Аметист
+item.copper_ingot.name=Медный Самородок
+item.iridium.name=Иридиум
+item.lead_ingot.name=Свинцовый Самородок
+item.platinum_ingot.name=Платиновый Самородок
+item.ruby.name=Рубин
+item.sapphire.name=Сапфир
+item.silver_ingot.name=Серебрянный Самородок
+item.tin_ingot.name=Оловянный Самородок
+item.uranium.name=Уран
+item.quartz.name=Certus Кварцевый кристалл
