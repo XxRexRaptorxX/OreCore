@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class WorldRegister {
 
 	public static void MainRegister(){
-	registerWorldGen(new WorldGenOre(),1);
+	registerWorldGen(new OreGenerator(),1);
 	}
 
 	public static void registerWorldGen(IWorldGenerator iGenerator, int weightedProbability) {

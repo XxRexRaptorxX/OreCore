@@ -1,19 +1,16 @@
 package xxrexraptorxx.orecore.main;
 
+import org.apache.logging.log4j.Logger;
+
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import xxrexraptorxx.orecore.proxy.ServerProxy;
 import xxrexraptorxx.orecore.util.ChiselHelper;
@@ -22,8 +19,8 @@ import xxrexraptorxx.orecore.util.FuelHandler;
 import xxrexraptorxx.orecore.util.OreDictionaryHandler;
 import xxrexraptorxx.orecore.util.UpdateChecker;
 import xxrexraptorxx.orecore.worldGen.LootHandler;
-import xxrexraptorxx.orecore.worldGen.WorldGenOre;
-import xxrexraptorxx.orecore.worldGen.WorldRegister;
+import xxrexraptorxx.orecore.worldGen.OreGenerator;
+import xxrexraptorxx.orecore.worldGen.WorldTickHandler;
 
 /**---------------------------------------------------------------------------------*
  * @author XxRexRaptorxX (RexRaptor)
@@ -31,17 +28,11 @@ import xxrexraptorxx.orecore.worldGen.WorldRegister;
  **---------------------------------------------------------------------------------*/
 
 
-@Mod(modid = OreCore.MODID, version = OreCore.VERSION)
+@Mod(modid = Reference.MODID, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MCVERSIONS)
 public class OreCore {
-   
-    public static final String MODID = "orecore";
-    public static final String VERSION = "1.3.7";
     
-   
-    @Instance("orecore")
-    public static OreCore instance;
-    
-    @SidedProxy(clientSide = "xxrexraptorxx.orecore.proxy.ClientProxy", serverSide = "xxrexraptorxx.orecore.proxy.ServerProxy")
+
+    @SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.SERVER)
     public static ServerProxy proxy;
     
     
@@ -61,7 +52,9 @@ public class OreCore {
     public static boolean activateOverworldGeneration;
     public static boolean activateNetherGeneration;
     public static boolean activateEndGeneration;
+    public static boolean activateRetroGen;
     
+    public static boolean activateVerbose;
     public static boolean activateClayVeins;
     public static boolean activateCompressedOres;
     public static boolean activateCompressedNetherOres;
@@ -109,6 +102,8 @@ public class OreCore {
     public static boolean activateRubyOre;
     public static boolean activateLeadOre;
     public static boolean activatePlatinumOre;
+    
+    public static int pigmenAggroRange;
 
     
     
@@ -122,7 +117,11 @@ public class OreCore {
 		}
 	};	
     
-    
+
+    @Mod.Instance
+    public static OreCore instance;
+
+    public static Logger logger;
     
     
     /***********************************************************************************************************************************/ 
@@ -130,7 +129,7 @@ public class OreCore {
     
     
     
-    @EventHandler
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
     	
         // Config //
@@ -142,6 +141,7 @@ public class OreCore {
     		activateNetherGeneration = config.get("GENERAL", "Activate the Nether generation", true, "[true/false]").getBoolean();
     		activateEndGeneration = config.get("GENERAL", "Activate the End generation", true, "[true/false]").getBoolean();
     		activateModdedOres = config.get("GENERAL", "Activate the modded ore generation", false, "[true/false]").getBoolean();
+    		activateRetroGen = config.get("GENERAL", "Activate ore generation in existing chunks", true, "[true/false]").getBoolean();
     		
     		activateClayVeins = config.get("OVERWORLD GENERATION", "Activate the clay vein generation in the overworld", false, "[true/false]").getBoolean();
     		activateSandVeins = config.get("OVERWORLD GENERATION", "Activate the sand vein generation in the overworld", false, "[true/false]").getBoolean();
@@ -160,6 +160,7 @@ public class OreCore {
     		activateSlate = config.get("OVERWORLD GENERATION", "Activate slate veins", true, "[true/false]").getBoolean();    	
     		activateLoam = config.get("OVERWORLD GENERATION", "Activate loam veins", true, "[true/false]").getBoolean();   
     		activateStoneDrop = config.get("EVENTS", "Activate the stone drop of stone blocks", false, "[true/false] [if you destroy a stone or a cobblestone drops with a small chance a rock (can be used for crafting)]").getBoolean();    		
+    		activateVerbose = config.get("EVENTS", "Activate verbose logging for retrogen", false, "[true/false]").getBoolean();    		
     		activateAshe = config.get("NETHER GENERATION", "Activate the ashe generation in the nether", true, "[true/false]").getBoolean();
     		activateSandstoneVeins = config.get("OVERWORLD GENERATION", "Activate sandstone veins", false, "[true/false]").getBoolean();    		
     		activateExpandetOreDrops = config.get("EVENTS", "Activate expandet ore drops (Ores drops the material and tiny piles of dust)", false, "[true/false]").getBoolean();    		
@@ -189,16 +190,17 @@ public class OreCore {
     		activateLeadOre = config.get("MOD ORES", "Activate the lead ore generation, if modded ore generation is on", true, "[true/false]").getBoolean();
     		activatePlatinumOre = config.get("MOD ORES", "Activate the platinum ore generation, if modded ore generation is on", true, "[true/false]").getBoolean();
     		
+    		pigmenAggroRange = config.getInt("Sets the aggro range of zombie pigmen, when you mine nether ores", "EVENTS", 20, 0, 100, "0 deaktivates this feature.");
     	config.save();
     	
     	
-    	
+    	 logger = event.getModLog();
 
-    UpdateChecker.checkForUpdates();  
+    	UpdateChecker.checkForUpdates();  
     	
-    MinecraftForge.EVENT_BUS.register(new Events());  
-       
-    MinecraftForge.EVENT_BUS.register(ModItems.class);
+    	MinecraftForge.EVENT_BUS.register(new Events());  
+    
+    	MinecraftForge.EVENT_BUS.register(ModItems.class);
     
     
     
@@ -214,6 +216,10 @@ public class OreCore {
 
 		// Handler //
 	    OreDictionaryHandler.registerOreDictionary();
+	    
+	    // Generation //
+        GameRegistry.registerWorldGenerator(OreGenerator.instance, 5);
+        MinecraftForge.EVENT_BUS.register(OreGenerator.instance);
 
     }
   
@@ -222,7 +228,7 @@ public class OreCore {
     
     
    
-    @EventHandler
+    @Mod.EventHandler
     public void Init(FMLInitializationEvent event) {
     	
     	// Recipes //
@@ -237,8 +243,7 @@ public class OreCore {
        ChiselHelper.chisel();
     
        // Generation //
-       MinecraftForge.EVENT_BUS.register(new LootHandler());
-       GameRegistry.registerWorldGenerator(new WorldGenOre(), 0);
+       MinecraftForge.EVENT_BUS.register(WorldTickHandler.instance);
 
     }
    
@@ -248,7 +253,7 @@ public class OreCore {
     
     
     
-    @EventHandler
+    @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
               
     }

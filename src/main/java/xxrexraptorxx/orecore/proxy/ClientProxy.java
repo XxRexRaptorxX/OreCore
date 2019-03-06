@@ -6,11 +6,13 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import xxrexraptorxx.orecore.main.ModBlocks;
 import xxrexraptorxx.orecore.main.ModItems;
+import xxrexraptorxx.orecore.util.Reflection;
  
 public class ClientProxy extends ServerProxy {
  
     @Override
     public void registerClientStuff() {
+    	Reflection.Init();
     	
     	/** Register **/
     	

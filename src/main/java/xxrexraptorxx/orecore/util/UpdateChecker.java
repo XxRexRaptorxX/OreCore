@@ -6,6 +6,7 @@ import java.net.URL;
 import java.util.Scanner;
 
 import xxrexraptorxx.orecore.main.OreCore;
+import xxrexraptorxx.orecore.main.Reference;
 
 
 public class UpdateChecker {
@@ -24,7 +25,7 @@ public class UpdateChecker {
 				String latestVersion = scanner.nextLine();
 				scanner.close();
 				
-				if (!OreCore.VERSION.equals(latestVersion)) {
+				if (!Reference.VERSION.equals(latestVersion)) {
 					newVersionAvailable = true;
 				}
 			} catch (MalformedURLException e) {

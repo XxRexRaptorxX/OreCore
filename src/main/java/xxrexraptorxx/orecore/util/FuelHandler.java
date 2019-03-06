@@ -3,6 +3,7 @@ package xxrexraptorxx.orecore.util;
 import xxrexraptorxx.orecore.main.ModBlocks;
 import xxrexraptorxx.orecore.main.ModItems;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
 
@@ -19,10 +20,10 @@ public class FuelHandler implements IFuelHandler {
 		if(fuel.getItem().equals(ModItems.lavaCrystal)) {
 			return 1000;  
 		}
-		if(fuel.getItem().equals(ModBlocks.magmarackBlock)) {
+		if(fuel.getItem().equals(Item.getItemFromBlock(ModBlocks.magmarackBlock))) {
 			return 800;  
 		}	
-		if(fuel.getItem().equals(ModBlocks.lavaCrystalBlock)) {
+		if(fuel.getItem().equals(Item.getItemFromBlock(ModBlocks.lavaCrystalBlock))) {
 			return 9500;  
 		}	
 		if(fuel.getItem().equals(ModItems.coalDust)) {

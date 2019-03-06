@@ -28,21 +28,7 @@ public class BlockEndLapisOre extends Block {
 
 	}
 
-	/* Drop */
-	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-		return Items.DYE;
-	}
-	
-    public int damageDropped(IBlockState state)
-    {
-        return this == ModBlocks.endLapisOre ? EnumDyeColor.BLUE.getDyeDamage() : 0;
-    }
 
-    public int quantityDropped(Random random)
-    {
-        return this == ModBlocks.endLapisOre ? 8 + random.nextInt(5) : 1;
-    }
-	
 	
 
 	@Override

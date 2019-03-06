@@ -27,30 +27,7 @@ public class BlockEndRedstoneOre extends Block {
 
 	}
 	
-	
-	/* Drop */
-    public int quantityDropped(Random random)
-    {
-        return 4 + random.nextInt(5);
-    }
-    
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
-        return Items.REDSTONE;
-    }
 
-
-	
-	@Override
-    public int quantityDroppedWithBonus(int fortune, Random random) {
-        return this.quantityDropped(random) + random.nextInt(fortune + 1);
-    }
-
-
-	@Override
-    public void dropBlockAsItemWithChance(World worldIn, BlockPos pos, IBlockState state, float chance, int fortune) {
-        super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
-    }
 
 				/* Exp */
     @Override

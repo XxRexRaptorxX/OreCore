@@ -28,23 +28,7 @@ public class BlockEndSapphireOre extends Block {
 		}
 	}
 
-	
-	/* Drop */
-	public Item getItemDropped(IBlockState state, Random rand, int fortune){
-	    return ModItems.sapphire;
-	}  
-	
-	
-	@Override
-    public int quantityDroppedWithBonus(int fortune, Random random) {
-        return this.quantityDropped(random) + random.nextInt(fortune + 1);
-    }
 
-
-	@Override
-    public void dropBlockAsItemWithChance(World worldIn, BlockPos pos, IBlockState state, float chance, int fortune) {
-        super.dropBlockAsItemWithChance(worldIn, pos, state, chance, fortune);
-    }
 
 				/* Exp */
     @Override

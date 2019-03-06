@@ -38,7 +38,7 @@ public class ItemLavaCrystalArmor extends ItemArmor {
 
 	private void effectPlayer(EntityPlayer player, Potion potion, int amplifier) {
 	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 1)
-	        player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 10, amplifier, true, true));
+	        player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 10, amplifier, true, false));
 	}
 
 	
